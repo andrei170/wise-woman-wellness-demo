@@ -260,6 +260,36 @@
     margin: 0;
   }
 
+  .snap-card.with-portrait {
+    display: grid;
+    grid-template-columns: 88px 1fr;
+    gap: 18px;
+    align-items: start;
+  }
+
+  .snap-card.with-portrait::before {
+    display: none;
+  }
+
+  .snap-portrait {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--rose-soft);
+    box-shadow: var(--shadow-sm);
+    background: var(--apricot);
+  }
+
+  .snap-portrait-caption {
+    display: block;
+    font-size: 0.72rem;
+    color: var(--charcoal-soft);
+    margin-top: 8px;
+    text-align: center;
+    font-style: italic;
+  }
+
   /* Audit cards */
   .audit-grid {
     display: grid;
@@ -693,10 +723,16 @@
           <div class="value">2009 in De Pere, Wisconsin</div>
           <p class="detail">Opened as a women-only practice 13 years before the cash-pay HRT and GLP-1 boom that brought every primary-care clinic into the category.</p>
         </div>
-        <div class="snap-card">
-          <div class="label">Founder</div>
-          <div class="value">Randi Mann, WHNP-BC, MSCP, APNP</div>
-          <p class="detail">Women's Health Nurse Practitioner Board Certified, Menopause Society Certified Practitioner, Advanced Practice Nurse Prescriber, with 30 plus years in women's health.</p>
+        <div class="snap-card with-portrait">
+          <div>
+            <img src="https://wisewomanwellness.com/wp-content/uploads/2021/03/Randi-Mann.jpg" alt="Randi Mann, WHNP-BC, MSCP, APNP, founder of Wise Woman Wellness" class="snap-portrait" loading="lazy" referrerpolicy="no-referrer" />
+            <span class="snap-portrait-caption">Image: wisewomanwellness.com</span>
+          </div>
+          <div>
+            <div class="label">Founder</div>
+            <div class="value">Randi Mann, WHNP-BC, MSCP, APNP</div>
+            <p class="detail">Women's Health Nurse Practitioner Board Certified, Menopause Society Certified Practitioner, Advanced Practice Nurse Prescriber, with 30 plus years in women's health.</p>
+          </div>
         </div>
         <div class="snap-card">
           <div class="label">Location</div>
