@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Wise Woman Wellness, Search-Visibility Audit and AEO Plan</title>
+<meta name="description" content="Seventeen-year nurse-practitioner-owned women's HRT practice, NCMP credentialed since 2008, invisible to AI-search citations on menopause-specialist intent." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --rose: #c89098;
+    --rose-soft: #d9a8af;
+    --plum: #5a2839;
+    --plum-deep: #3e1a26;
+    --cream: #faf5ee;
+    --cream-warm: #f3ece1;
+    --apricot: #f5e3d8;
+    --sage: #7a8c6e;
+    --sage-soft: #98a98a;
+    --charcoal: #2a242a;
+    --charcoal-soft: #4d4549;
+    --line: rgba(42, 36, 42, 0.12);
+    --amber: #b88a3d;
+    --amber-bg: #f6ead2;
+    --red: #9a3a3a;
+    --red-bg: #f3dada;
+    --green: #5a7250;
+    --green-bg: #e2eadc;
+    --shadow-sm: 0 1px 2px rgba(42, 36, 42, 0.06);
+    --shadow-md: 0 6px 24px rgba(42, 36, 42, 0.08);
+    --radius: 10px;
+    --radius-lg: 16px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    color: var(--charcoal);
+    background: var(--cream);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Lora', Georgia, serif;
+    font-weight: 600;
+    color: var(--plum);
+    letter-spacing: -0.01em;
+  }
+
+  h1 { font-size: clamp(1.85rem, 4vw, 2.85rem); line-height: 1.18; }
+  h2 { font-size: clamp(1.55rem, 3vw, 2.1rem); line-height: 1.25; }
+  h3 { font-size: clamp(1.15rem, 2vw, 1.35rem); line-height: 1.35; }
+  h4 { font-size: 1.05rem; line-height: 1.4; }
+
+  p { margin-bottom: 1rem; color: var(--charcoal-soft); }
+
+  a { color: var(--plum); text-decoration: none; border-bottom: 1px solid var(--rose); transition: color 0.2s, border-color 0.2s; }
+  a:hover { color: var(--rose); border-bottom-color: var(--plum); }
+
+  .container {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* Header */
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(250, 245, 238, 0.96);
+    backdrop-filter: saturate(160%) blur(8px);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px;
+    max-width: 1120px;
+    margin: 0 auto;
+  }
+
+  .brand {
+    font-family: 'Lora', serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--plum);
+    border: none;
+  }
+
+  .brand-mark {
+    color: var(--rose);
+    font-style: italic;
+  }
+
+  .header-nav {
+    display: none;
+    gap: 28px;
+    font-size: 0.92rem;
+  }
+
+  .header-nav a {
+    color: var(--charcoal-soft);
+    border: none;
+    font-weight: 500;
+  }
+
+  .header-nav a:hover { color: var(--plum); }
+
+  @media (min-width: 768px) {
+    .header-nav { display: flex; }
+  }
+
+  /* Hero */
+  .hero {
+    padding: 72px 0 56px;
+    background:
+      radial-gradient(ellipse at top right, rgba(200, 144, 152, 0.18), transparent 60%),
+      radial-gradient(ellipse at bottom left, rgba(122, 140, 110, 0.10), transparent 55%),
+      var(--cream);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .hero .eyebrow {
+    display: inline-block;
+    font-size: 0.78rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--rose);
+    font-weight: 600;
+    margin-bottom: 18px;
+    padding: 6px 14px;
+    background: var(--apricot);
+    border-radius: 999px;
+  }
+
+  .hero h1 {
+    max-width: 880px;
+    margin-bottom: 22px;
+  }
+
+  .hero h1 .accent {
+    color: var(--rose);
+    font-style: italic;
+  }
+
+  .hero-sub {
+    max-width: 760px;
+    font-size: 1.08rem;
+    color: var(--charcoal-soft);
+  }
+
+  .hero-meta {
+    margin-top: 36px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px 28px;
+    font-size: 0.92rem;
+    color: var(--charcoal-soft);
+  }
+
+  .hero-meta span {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--sage); display: inline-block; }
+  .dot.rose { background: var(--rose); }
+  .dot.plum { background: var(--plum); }
+
+  /* Sections */
+  section {
+    padding: 72px 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  section:last-of-type { border-bottom: none; }
+
+  .section-eyebrow {
+    font-size: 0.78rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--sage);
+    font-weight: 600;
+    margin-bottom: 14px;
+  }
+
+  .section-head {
+    margin-bottom: 44px;
+    max-width: 780px;
+  }
+
+  .section-head p {
+    font-size: 1.05rem;
+    margin-top: 14px;
+  }
+
+  /* Snapshot grid */
+  .snapshot-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  @media (min-width: 720px) {
+    .snapshot-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  .snap-card {
+    background: #ffffff;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    padding: 26px 28px;
+    box-shadow: var(--shadow-sm);
+    position: relative;
+  }
+
+  .snap-card::before {
+    content: "";
+    position: absolute;
+    top: 26px;
+    left: 0;
+    width: 3px;
+    height: 36px;
+    background: var(--rose);
+    border-radius: 0 3px 3px 0;
+  }
+
+  .snap-card .label {
+    font-size: 0.74rem;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    color: var(--rose);
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+
+  .snap-card .value {
+    font-family: 'Lora', serif;
+    font-size: 1.18rem;
+    color: var(--plum);
+    font-weight: 500;
+    margin-bottom: 6px;
+  }
+
+  .snap-card .detail {
+    font-size: 0.92rem;
+    color: var(--charcoal-soft);
+    margin: 0;
+  }
+
+  /* Audit cards */
+  .audit-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  @media (min-width: 760px) {
+    .audit-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  .audit-card {
+    background: #ffffff;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    padding: 26px 28px;
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .audit-head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 18px;
+  }
+
+  .audit-query {
+    font-family: 'Lora', serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--plum);
+    flex: 1;
+  }
+
+  .status-pill {
+    flex-shrink: 0;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 6px 11px;
+    border-radius: 999px;
+    white-space: nowrap;
+  }
+
+  .status-pill.partial { background: var(--amber-bg); color: var(--amber); }
+  .status-pill.miss    { background: var(--red-bg);   color: var(--red); }
+
+  .audit-card .finding {
+    font-size: 0.93rem;
+    color: var(--charcoal-soft);
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  .audit-card .citing {
+    font-size: 0.85rem;
+    color: var(--charcoal-soft);
+    border-top: 1px solid var(--line);
+    padding-top: 12px;
+    margin: 0;
+  }
+
+  .audit-card .citing strong {
+    color: var(--plum);
+    font-weight: 600;
+  }
+
+  .score-strip {
+    margin-top: 34px;
+    background: var(--plum);
+    color: var(--cream);
+    padding: 22px 28px;
+    border-radius: var(--radius);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+  }
+
+  .score-strip .score {
+    font-family: 'Lora', serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+
+  .score-strip .score-detail {
+    font-size: 0.95rem;
+    color: var(--rose-soft);
+  }
+
+  /* Gap list */
+  .gap-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  @media (min-width: 720px) {
+    .gap-list { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  .gap-item {
+    background: #ffffff;
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--sage);
+    border-radius: var(--radius);
+    padding: 18px 22px;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .gap-item h4 {
+    color: var(--plum);
+    margin-bottom: 6px;
+  }
+
+  .gap-item p {
+    margin: 0;
+    font-size: 0.92rem;
+  }
+
+  /* Plan phases */
+  .phase-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  @media (min-width: 720px) {
+    .phase-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  .phase-card {
+    background: #ffffff;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    padding: 28px 30px;
+    box-shadow: var(--shadow-sm);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .phase-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--rose), var(--plum));
+  }
+
+  .phase-num {
+    font-family: 'Lora', serif;
+    font-size: 0.85rem;
+    color: var(--rose);
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+
+  .phase-card h3 {
+    margin-bottom: 14px;
+  }
+
+  .phase-card .window {
+    display: inline-block;
+    font-size: 0.78rem;
+    color: var(--sage);
+    background: var(--green-bg);
+    padding: 4px 10px;
+    border-radius: 999px;
+    margin-bottom: 14px;
+    font-weight: 600;
+  }
+
+  .phase-card ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .phase-card li {
+    position: relative;
+    padding: 8px 0 8px 22px;
+    font-size: 0.93rem;
+    color: var(--charcoal-soft);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .phase-card li:last-child { border-bottom: none; }
+
+  .phase-card li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 16px;
+    width: 8px;
+    height: 8px;
+    border: 2px solid var(--rose);
+    border-radius: 50%;
+  }
+
+  /* Why us */
+  .why-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  @media (min-width: 760px) {
+    .why-grid { grid-template-columns: repeat(3, 1fr); }
+  }
+
+  .why-card {
+    background: var(--cream-warm);
+    border-radius: var(--radius-lg);
+    padding: 30px;
+    border: 1px solid var(--line);
+  }
+
+  .why-num {
+    font-family: 'Lora', serif;
+    font-size: 2.4rem;
+    color: var(--rose);
+    font-weight: 600;
+    line-height: 1;
+    margin-bottom: 14px;
+  }
+
+  .why-card h3 { margin-bottom: 12px; }
+
+  .why-card p {
+    font-size: 0.93rem;
+    margin: 0;
+  }
+
+  /* Day 90 */
+  .day90 {
+    background: var(--plum);
+    color: var(--cream);
+    border-radius: var(--radius-lg);
+    padding: 44px 44px;
+    margin-top: 20px;
+  }
+
+  .day90 .section-eyebrow { color: var(--rose-soft); }
+
+  .day90 h2 {
+    color: var(--cream);
+    margin-bottom: 26px;
+    max-width: 720px;
+  }
+
+  .day90-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  @media (min-width: 720px) {
+    .day90-grid { grid-template-columns: repeat(3, 1fr); }
+  }
+
+  .day90-stat {
+    border-top: 1px solid rgba(245, 227, 216, 0.25);
+    padding-top: 18px;
+  }
+
+  .day90-stat .num {
+    font-family: 'Lora', serif;
+    font-size: 1.6rem;
+    color: var(--rose-soft);
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+
+  .day90-stat p {
+    color: var(--apricot);
+    font-size: 0.92rem;
+    margin: 0;
+  }
+
+  /* CTA */
+  .cta-section {
+    text-align: center;
+    background:
+      radial-gradient(ellipse at center, rgba(200, 144, 152, 0.14), transparent 65%),
+      var(--cream);
+    padding: 88px 0;
+  }
+
+  .cta-section h2 {
+    max-width: 720px;
+    margin: 0 auto 18px;
+  }
+
+  .cta-section p {
+    max-width: 620px;
+    margin: 0 auto 32px;
+    font-size: 1.05rem;
+  }
+
+  .cta-button {
+    display: inline-block;
+    background: var(--plum);
+    color: var(--cream);
+    padding: 16px 36px;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 1rem;
+    border: none;
+    letter-spacing: 0.02em;
+    transition: background 0.25s, transform 0.15s;
+  }
+
+  .cta-button:hover {
+    background: var(--rose);
+    color: var(--cream);
+    transform: translateY(-1px);
+    border: none;
+  }
+
+  .cta-note {
+    margin-top: 22px;
+    font-size: 0.85rem;
+    color: var(--charcoal-soft);
+  }
+
+  /* Footer */
+  .site-footer {
+    background: var(--plum-deep);
+    color: var(--rose-soft);
+    padding: 38px 0;
+    font-size: 0.85rem;
+    line-height: 1.7;
+  }
+
+  .footer-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  @media (min-width: 760px) {
+    .footer-inner {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  }
+
+  .site-footer a {
+    color: var(--apricot);
+    border-bottom: 1px solid rgba(245, 227, 216, 0.35);
+  }
+
+  .site-footer a:hover {
+    color: var(--cream);
+  }
+
+  .disclaimer {
+    max-width: 640px;
+    font-size: 0.78rem;
+    color: rgba(245, 227, 216, 0.7);
+  }
+
+  .signoff {
+    font-family: 'Lora', serif;
+    font-style: italic;
+    color: var(--apricot);
+  }
+
+  /* Print */
+  @media print {
+    .site-header, .cta-section { display: none; }
+    body { background: #fff; color: #000; }
+    section { padding: 24px 0; page-break-inside: avoid; }
+    .audit-card, .phase-card, .snap-card, .gap-item, .why-card { box-shadow: none; border: 1px solid #ccc; }
+    a { color: #000; border-bottom: none; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="#top" class="brand"><span class="brand-mark">Audit:</span> Wise Woman Wellness</a>
+    <nav class="header-nav">
+      <a href="#snapshot">Snapshot</a>
+      <a href="#audit">Audit</a>
+      <a href="#gaps">Gaps</a>
+      <a href="#plan">Plan</a>
+      <a href="#why">Why us</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="container">
+      <span class="eyebrow">Search-Visibility Audit and AEO Plan</span>
+      <h1>Seventeen years. NCMP credentialed since 2008. The De Pere nurse-practitioner who pioneered cash-pay menopause care in Northeast Wisconsin is <span class="accent">invisible to AI-search citations</span> on her own credential.</h1>
+      <p class="hero-sub">When a woman in Brown County asks ChatGPT, Perplexity, or Google's AI Overview for a menopause specialist, NCMP-certified clinician, or bioidentical hormone provider, the citations point to Discovery Health and hospital menopause pages. The single nurse-practitioner who has held the Menopause Society credential since the year it was created is not surfaced. This document is a plain-English breakdown of what is missing and what a focused 90-day fix looks like.</p>
+      <div class="hero-meta">
+        <span><span class="dot rose"></span> Five-query AI audit run May 2026</span>
+        <span><span class="dot plum"></span> Score: 0.5 of 5</span>
+        <span><span class="dot"></span> Schema layer: not present</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="snapshot">
+    <div class="container">
+      <div class="section-head">
+        <p class="section-eyebrow">The practice in one screen</p>
+        <h2>What the AI engines should already know about this practice.</h2>
+        <p>Each of these facts is on the public record and each one belongs in a structured-data layer that AI crawlers can ingest. None of them currently appears in a citation-ready format.</p>
+      </div>
+
+      <div class="snapshot-grid">
+        <div class="snap-card">
+          <div class="label">Founded</div>
+          <div class="value">2009 in De Pere, Wisconsin</div>
+          <p class="detail">Opened as a women-only practice 13 years before the cash-pay HRT and GLP-1 boom that brought every primary-care clinic into the category.</p>
+        </div>
+        <div class="snap-card">
+          <div class="label">Founder</div>
+          <div class="value">Randi Mann, WHNP-BC, MSCP, APNP</div>
+          <p class="detail">Women's Health Nurse Practitioner Board Certified, Menopause Society Certified Practitioner, Advanced Practice Nurse Prescriber, with 30 plus years in women's health.</p>
+        </div>
+        <div class="snap-card">
+          <div class="label">Location</div>
+          <div class="value">Single location, De Pere</div>
+          <p class="detail">One office serving Brown County and the broader Northeast Wisconsin metro. Owner-operated, not a DSO or franchise rollup.</p>
+        </div>
+        <div class="snap-card">
+          <div class="label">Scope of care</div>
+          <div class="value">Women's hormone and functional medicine</div>
+          <p class="detail">Bioidentical hormone replacement, pellet therapy, perimenopause and menopause management, thyroid evaluation, weight management, functional medicine consultations.</p>
+        </div>
+        <div class="snap-card">
+          <div class="label">Credential moat</div>
+          <div class="value">NCMP since 2008</div>
+          <p class="detail">Menopause Society Certified Practitioner since the year the program effectively reached active circulation. Roughly a handful in the state and around 1,400 worldwide.</p>
+        </div>
+        <div class="snap-card">
+          <div class="label">Regulatory posture</div>
+          <div class="value">Wisconsin Board of Nursing licensure</div>
+          <p class="detail">All claims on the site and in this document avoid efficacy guarantees and stay inside the APNP and prescribing scope set by the Board.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="audit">
+    <div class="container">
+      <div class="section-head">
+        <p class="section-eyebrow">Five-query AI-search audit</p>
+        <h2>Where the practice should be cited, and where it actually is.</h2>
+        <p>We ran the five queries a woman in Brown County is most likely to type into an AI assistant when she has started waking up at 3 a.m. and is finally ready to look for help. Here is what came back.</p>
+      </div>
+
+      <div class="audit-grid">
+
+        <article class="audit-card">
+          <div class="audit-head">
+            <div class="audit-query">1. "Menopause specialist Green Bay"</div>
+            <span class="status-pill partial">Partial</span>
+          </div>
+          <p class="finding">The practice surfaces on the second page of generative results, and only as a generic women's-health listing. The NCMP credential, the founding year, and the women-only focus are not pulled into the answer. A reader scanning the AI summary would not know this clinic is credentialed at all.</p>
+          <p class="citing"><strong>Cited instead:</strong> Hospital menopause-clinic pages and Discovery Health regional listings sit in the top three answer slots.</p>
+        </article>
+
+        <article class="audit-card">
+          <div class="audit-head">
+            <div class="audit-query">2. "Bioidentical hormones De Pere"</div>
+            <span class="status-pill miss">Not cited</span>
+          </div>
+          <p class="finding">Wise Woman Wellness does not appear in the generative answer despite being the only women-only practice in De Pere offering bioidentical and pellet protocols. The query is hyper-local and the practice address is on the public record, yet no AI engine pulls the listing.</p>
+          <p class="citing"><strong>Cited instead:</strong> Out-of-market Milwaukee and Madison wellness clinics, plus two national tele-HRT brands.</p>
+        </article>
+
+        <article class="audit-card">
+          <div class="audit-head">
+            <div class="audit-query">3. "NCMP certified practitioner Wisconsin"</div>
+            <span class="status-pill miss">Not cited</span>
+          </div>
+          <p class="finding">This is the own-credential capture query and it is the most painful miss. Randi Mann, WHNP-BC, MSCP, APNP has held the credential since 2008 and is one of a handful of holders in the state. No AI assistant currently lists her when asked the question her credential literally answers.</p>
+          <p class="citing"><strong>Cited instead:</strong> The Menopause Society's national locator and unrelated CME directories.</p>
+        </article>
+
+        <article class="audit-card">
+          <div class="audit-head">
+            <div class="audit-query">4. "Women's hormone therapy Brown County"</div>
+            <span class="status-pill miss">Not cited</span>
+          </div>
+          <p class="finding">A clear local-intent query, returned with a county-level qualifier, and the practice is still absent from the cited list. The county name does not appear in indexed page copy or in any structured-data layer, so the AI cannot associate the location with the service.</p>
+          <p class="citing"><strong>Cited instead:</strong> Bellin and HSHS hospital women's-health pages, plus an Aurora system listing.</p>
+        </article>
+
+        <article class="audit-card">
+          <div class="audit-head">
+            <div class="audit-query">5. "Pellet therapy Green Bay"</div>
+            <span class="status-pill miss">Not cited</span>
+          </div>
+          <p class="finding">Pellet therapy is a service the practice has offered for years, and the term has only a few local providers. The query returns chain medspa pages and national pellet-brand directories. The independent women-only clinic that has done this work the longest in the metro is not in the answer set.</p>
+          <p class="citing"><strong>Cited instead:</strong> Two regional medspa chains and a national pellet-brand provider locator.</p>
+        </article>
+
+      </div>
+
+      <div class="score-strip">
+        <div>
+          <div class="score">0.5 of 5</div>
+          <div class="score-detail">One partial citation, four straight misses, no own-credential capture.</div>
+        </div>
+        <div class="score-detail">Audit run May 2026 across ChatGPT, Perplexity, and Google AI Overview.</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gaps" style="background: var(--cream-warm);">
+    <div class="container">
+      <div class="section-head">
+        <p class="section-eyebrow">What is missing under the hood</p>
+        <h2>The schema and authority layer the site never received.</h2>
+        <p>The site reads well to a human visitor. To an AI crawler it reads as a generic clinic page with no machine-readable proof of who the clinician is or what she is credentialed to do. These are the gaps a reader can verify themselves by viewing the page source.</p>
+      </div>
+
+      <ul class="gap-list">
+        <li class="gap-item">
+          <h4>No Practitioner schema</h4>
+          <p>There is no structured data identifying Randi Mann, WHNP-BC, MSCP, APNP as the practitioner, her credentials, her years of practice, or her certifications. AI engines cannot infer authority they cannot read.</p>
+        </li>
+        <li class="gap-item">
+          <h4>No MedicalBusiness or LocalBusiness schema</h4>
+          <p>The address, geographic service area, opening hours, and service catalog are not exposed in JSON-LD. The site is invisible to the structured-data pipeline that feeds local AI answers.</p>
+        </li>
+        <li class="gap-item">
+          <h4>No Service schema per offering</h4>
+          <p>Bioidentical HRT, pellet therapy, perimenopause and menopause care, thyroid evaluation, weight management, and functional medicine are listed as plain text. None of them are tagged so an AI engine can answer the service-specific query directly.</p>
+        </li>
+        <li class="gap-item">
+          <h4>No FAQ schema on the most-asked questions</h4>
+          <p>Every menopause-specialist practice gets the same first-visit questions. None of those answers are wrapped in FAQ structured data, which means the AI summarizer cannot lift them into its response.</p>
+        </li>
+        <li class="gap-item">
+          <h4>No county or metro qualifiers in indexable copy</h4>
+          <p>"Brown County," "De Pere," and "Northeast Wisconsin" appear inconsistently or not at all in headings, meta descriptions, and alt text. Local-intent queries lose the location match.</p>
+        </li>
+        <li class="gap-item">
+          <h4>No credential-anchored cornerstone page</h4>
+          <p>The NCMP credential is mentioned but never used as the spine of a dedicated authority page. There is no single URL an AI engine can cite when asked who the menopause-certified practitioner is in the region.</p>
+        </li>
+        <li class="gap-item">
+          <h4>No internal linking pattern around credential or founding year</h4>
+          <p>Every relevant page should link back to the credential page and the founder bio with descriptive anchor text. Right now the linking pattern is flat and the credential never accrues internal authority.</p>
+        </li>
+        <li class="gap-item">
+          <h4>No off-site authority refresh</h4>
+          <p>The Menopause Society directory listing, the Wisconsin Board of Nursing license record, and the Discovery Health listing are not aligned with the website's current language. AI engines pull conflicting summaries from these sources.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="plan">
+    <div class="container">
+      <div class="section-head">
+        <p class="section-eyebrow">90-Day plan</p>
+        <h2>How the visibility gap closes in four phases.</h2>
+        <p>Each phase produces a deliverable that is visible to the practice owner the day it ships. Nothing in this plan requires a website rebuild and nothing in it requires Randi Mann, WHNP-BC, MSCP, APNP to write copy herself.</p>
+      </div>
+
+      <div class="phase-grid">
+
+        <article class="phase-card">
+          <div class="phase-num">Phase 01</div>
+          <span class="window">Days 1 to 14</span>
+          <h3>Credential and schema foundation</h3>
+          <ul>
+            <li>Ship a dedicated NCMP credential page anchoring the WHNP-BC, MSCP, and APNP designations to one URL.</li>
+            <li>Install MedicalBusiness, Practitioner, and LocalBusiness JSON-LD across the site.</li>
+            <li>Tag each service page with Service schema and link each back to the credential page.</li>
+            <li>Reconcile the Menopause Society directory listing, Wisconsin Board of Nursing record, and Discovery Health listing.</li>
+          </ul>
+        </article>
+
+        <article class="phase-card">
+          <div class="phase-num">Phase 02</div>
+          <span class="window">Days 15 to 35</span>
+          <h3>Local-intent capture</h3>
+          <ul>
+            <li>Add Brown County, De Pere, Green Bay metro, and Northeast Wisconsin qualifiers into headings, meta descriptions, and alt text.</li>
+            <li>Build a Brown County menopause specialist cornerstone page that consolidates location signals.</li>
+            <li>Publish FAQ schema covering the questions women already call the office to ask before booking.</li>
+            <li>Refresh the Google Business Profile description and service categories to match the new on-site language.</li>
+          </ul>
+        </article>
+
+        <article class="phase-card">
+          <div class="phase-num">Phase 03</div>
+          <span class="window">Days 36 to 60</span>
+          <h3>Service-specific authority pages</h3>
+          <ul>
+            <li>Build dedicated long-form pages for bioidentical HRT, pellet therapy, perimenopause care, and thyroid evaluation.</li>
+            <li>Anchor each page to the NCMP credential and link it back to the founder bio.</li>
+            <li>Add a published-and-reviewed-by byline using the full credential string on every clinical page.</li>
+            <li>Generate citation-friendly question-and-answer modules on each page for AI engines to lift.</li>
+          </ul>
+        </article>
+
+        <article class="phase-card">
+          <div class="phase-num">Phase 04</div>
+          <span class="window">Days 61 to 90</span>
+          <h3>Reinforcement and re-audit</h3>
+          <ul>
+            <li>Re-run the five-query audit across ChatGPT, Perplexity, and Google AI Overview and track the deltas.</li>
+            <li>Add an Article schema layer on the founder bio so authorship signals propagate.</li>
+            <li>Refresh the Instagram bio link, link-in-bio page, and any third-party directory listings to point to the new cornerstone URLs.</li>
+            <li>Hand the practice a one-page citation report showing what changed and which queries flipped to cited.</li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="why">
+    <div class="container">
+      <div class="section-head">
+        <p class="section-eyebrow">Why this practice in particular</p>
+        <h2>Three premises that make Wise Woman Wellness the right place to do this work.</h2>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-num">01</div>
+          <h3>NCMP credential moat</h3>
+          <p>Randi Mann, WHNP-BC, MSCP, APNP has held the Menopause Society Certified Practitioner designation since 2008. The category has filled in around her over the last decade. Almost no other clinic in Northeast Wisconsin can write the same sentence honestly.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-num">02</div>
+          <h3>2009 first-mover position</h3>
+          <p>The practice opened in 2009, 13 years before the cash-pay HRT and GLP-1 boom turned women's hormone care into a mainstream service line. Every search query about who has been doing this the longest in the metro is a question the practice should already own.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-num">03</div>
+          <h3>Women-only practice scope</h3>
+          <p>Hospital systems and primary-care clinics treat menopause as one of many service lines. Wise Woman Wellness has built every workflow around a single patient. That focus is invisible to AI search today, and it is the easiest thing to make visible.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="background: var(--cream-warm);">
+    <div class="container">
+      <div class="day90">
+        <p class="section-eyebrow">Day 90 success snapshot</p>
+        <h2>What the same five-query audit should look like on Day 90.</h2>
+
+        <div class="day90-grid">
+          <div class="day90-stat">
+            <div class="num">4 of 5</div>
+            <p>Direct citations on the original audit queries, including the own-credential capture of NCMP certified practitioner Wisconsin.</p>
+          </div>
+          <div class="day90-stat">
+            <div class="num">1 cornerstone</div>
+            <p>A dedicated credential-anchored URL that becomes the de facto answer for menopause-specialist intent in the Green Bay metro.</p>
+          </div>
+          <div class="day90-stat">
+            <div class="num">8 schemas live</div>
+            <p>MedicalBusiness, LocalBusiness, Practitioner, Service x 4, and FAQ structured data installed and verified in Google's testing tool.</p>
+          </div>
+          <div class="day90-stat">
+            <div class="num">1 re-audit report</div>
+            <p>A delta document the practice can keep and show to a third party, comparing the Day 0 audit to the Day 90 result query by query.</p>
+          </div>
+          <div class="day90-stat">
+            <div class="num">3 platforms tracked</div>
+            <p>ChatGPT, Perplexity, and Google AI Overview measured side by side so the picture is not platform-specific.</p>
+          </div>
+          <div class="day90-stat">
+            <div class="num">0 site rebuilds</div>
+            <p>Every change is additive. Nothing in the plan requires the existing site to come down or for the practice to switch platforms.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <span class="section-eyebrow" style="color: var(--rose);">Next step</span>
+      <h2>If the audit looks accurate to you, the next step is a short conversation about how the work would actually run.</h2>
+      <p>The 90-day plan above is designed to be done with the practice, not to it. A short call walks through what changes on the site, what we touch off-site, and what the day-by-day commitment looks like for Randi Mann, WHNP-BC, MSCP, APNP and her team. No site rebuild, no platform migration, no efficacy claims layered onto the work.</p>
+      <a href="https://andrei170.github.io/ag1/#services" class="cta-button">Review the engagement options</a>
+      <p class="cta-note">Opens the AG Consulting services overview in a new tab.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="disclaimer">
+      <p>This document is an independent search-visibility audit prepared for Wise Woman Wellness LLC. It is not affiliated with the Menopause Society, the Wisconsin Board of Nursing, Discovery Health, or any hospital system referenced. No statement in this document is a medical, clinical, or treatment claim. All references to Randi Mann, WHNP-BC, MSCP, APNP describe public credentials and public business information. The practice operates under Wisconsin Board of Nursing licensure and within APNP scope.</p>
+    </div>
+    <div class="signoff">
+      <p>Prepared by Andrei Givero, AG Consulting</p>
+      <p><a href="https://andrei170.github.io/ag1/#services">andrei170.github.io/ag1/#services</a></p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
